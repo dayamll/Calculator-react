@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDom from 'react-dom';
 
 import Historial from './historial';
-import Operador from './operadoresN';
+import Numeros from './operadoresN';
+import Operadores from './Operadores';
 import Output from './output';
 
 
@@ -10,7 +11,7 @@ const Calculator = () => {
   return(
   <div>
     <Historial />
-    <Operador />
+    <Numeros />
     <Output />
   </div>)
 }
