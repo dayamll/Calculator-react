@@ -1,9 +1,9 @@
 import React from 'react'
 // import './historial.css'
 
-const Historial = (props) => {
+const Historial = () => {
   return (
-    <div className="screen">{props.number}</div>
+    <div className="screen"></div>
   )
 }
 

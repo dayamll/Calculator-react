@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import Historial from '../componentes/historial.js'
+import Output from '../componentes/output.js'
 import { getInitial } from '../actions/index.js'
 
 class Calculator extends Component {
@@ -11,7 +11,7 @@ class Calculator extends Component {
   render() {
     return (
       <div>
-        <Historial number={this.props.number} />
+        <Output number={this.props.number} />
       </div>
     )
   }
