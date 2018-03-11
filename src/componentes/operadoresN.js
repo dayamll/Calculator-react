@@ -1,14 +1,11 @@
 import React from 'react'
-import Numeros from './Numeros'
-import Operadores from './Operadores'
+import Button from './button'
 // import './operadoresN.css';
 
 const OperadoresNumeros = () => {
   return (
     <div>
-      <Numeros />
-      <Operadores />
-
+      <Button />
     </div>)
 }
 
