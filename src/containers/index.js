@@ -9,14 +9,15 @@ import { getInitial } from '../actions/index.js'
 class Calculator extends Component {
   state = {
     inputNumber: 0,
-    arr: [ "1", "2", "3", "C", "4", "5", "6", "=", "7", "8", "9", ".", "+", "0", "-", "*", "/" ]
+    arr: ["1", "2", "3", "C", "4", "5", "6", "=", "7", "8", "9", ".", "+", "0", "-", "*", "/"]
   }
   componentDidMount() {
     this.props.getInitial()
   }
   showValue = (e) => {
+    console.log(e)
     this.setState({
-      inputNumber: e.target.value
+      inputNumber: this.state.inputNumber + e.target.value
     })
   }
 
@@ -24,8 +25,8 @@ class Calculator extends Component {
     return (
       <div>
         <Output number={this.state.inputNumber} />
-        {this.state.arr.map((item, index)=>{
-          return (<input type="button" key={index} value={item} onClick = {this.showValue}/>)
+        {this.state.arr.map((item, index) => {
+          return (<input type="button" key={index} value={item} onClick={this.showValue} />)
         })}
       </div>
     )
