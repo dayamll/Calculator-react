@@ -24,8 +24,8 @@ class Calculator extends Component {
     return (
       <div>
         <Output number={this.state.inputNumber} />
-        {this.state.arr.map((item)=>{
-          return (<input type="button" value={item} onClick = {this.showValue}/>)
+        {this.state.arr.map((item, index)=>{
+          return (<input type="button" key={index} value={item} onClick = {this.showValue}/>)
         })}
       </div>
     )
