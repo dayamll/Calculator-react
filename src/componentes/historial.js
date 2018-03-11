@@ -1,10 +1,10 @@
 import React from 'react'
 // import './historial.css'
 
-const Historial = () => {
-    return (
-      <div className="screen">0</div>
-    )
+const Historial = (props) => {
+  return (
+    <div className="screen">{props.number}</div>
+  )
 }
 
 export default Historial
